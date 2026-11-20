@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cronit"
+version = "0.1.0"
+description = "cron 表达式工具：校验、中文解释、计算未来 N 次执行时间"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["cron", "scheduler", "cli", "datetime", "zero-dependency"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[project.scripts]
+cronit = "cronit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/cronit"
+Source = "https://github.com/eastyou/cronit"
+
+[tool.setuptools]
+packages = ["cronit"]
